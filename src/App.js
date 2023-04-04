@@ -1,19 +1,24 @@
-import { useState } from "react"
-
+import { BrowserRouter, Routes,Link,Route  } from "react-router-dom";
+import Login from './LoginPage/login';
+import Fn from './Functions/Function-return';
 export default function App() {
-  const[user, setUser]=useState("")
-  const handler = e=>{
-    setUser(e.target.value)
-  }
-  return (
-    <div>
-      <center>
+    return (
+     <div>
         
-      <input type="text" placeholder='Usename' value={user} name="user"
-      onChange={handler}
-      /><br/>
-      <h3>{user}</h3>
-      </center>
-    </div>
-  )
+        <h1>Router Link</h1>
+
+        <BrowserRouter>
+        <nav>
+            <Link to="/LoginPage/login">Login Page</Link>
+            <Link to="/Functions/Function-return">Functions Page</Link>
+        </nav>
+        <section>
+            <Routes>
+                <Route path="/LoginPage/login" element={<Login/>}/>
+                <Route path="/Functions/Function-return" element={<Fn/>}/>
+            </Routes>
+        </section>
+        </BrowserRouter>
+     </div>  
+    )
 }

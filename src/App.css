@@ -38,3 +38,22 @@
     transform: rotate(360deg);
   }
 } */
+
+.navigation{
+  width: 200px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(210 210 210);
+}
+.item{
+  list-style: none;
+  padding: 10px;
+ 
+}
+.item a {
+  text-decoration: none;
+}
+.item li {
+  margin-bottom: 20px;
+}
