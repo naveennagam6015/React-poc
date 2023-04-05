@@ -1,16 +1,19 @@
 import { BrowserRouter, Routes,Link,Route  } from "react-router-dom";
 import Login from './LoginPage/login';
 import Fn from './Functions/Function-return';
+import "./App.css"
+import FunctionReturn from "./Functions/Function-return";
 export default function App() {
     return (
      <div>
         
-        <h1>Router Link</h1>
+        <h1 className="t-cntr">Router Link</h1>
 
         <BrowserRouter>
-        <nav>
-            <Link to="/LoginPage/login">Login Page</Link>
-            <Link to="/Functions/Function-return">Functions Page</Link>
+        <nav className="t-cntr">
+            <button className="margin"><Link to="/LoginPage/login">Login Page</Link></button>
+            <button><Link to="/Functions/Function-return">Functions Page</Link>
+</button>
         </nav>
         <section>
             <Routes>
@@ -19,6 +22,7 @@ export default function App() {
             </Routes>
         </section>
         </BrowserRouter>
+        {/* <Function-return/> */}
      </div>  
     )
 }
