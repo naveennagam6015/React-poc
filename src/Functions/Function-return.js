@@ -12,25 +12,27 @@ function App() {
         if (firstname.length == 0 || lastname.length == 0) {
             setError(true)
         }
-        console.log(firstname,lastname)
+        if (firstname&&lastname){
+            console.log("First Name",firstname,"/nLast Name",lastname)
+        }
     }
 
     return (
         <div className="t-cntr">
-            <h2>Adding Numbers</h2>
+            <h2>Warning</h2>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <input type="text" onChange={e => firstname(e.target.value)}></input>
+                    <input placeholder="First name" type="text" onChange={e=>firstname(e.target.value)}></input>
                 </div><br />
                 {error&& firstname.length<=0?
-                    <label className="required">Please fill any number</label> : ""}<br />
-                <span>+</span><br />
+                <label className="required">Please fill any number</label>:""}<br />
+                {/* <span>+</span><br /> */}
                 <div>
-                    <input type="text" onChange={e => lastname(e.target.value)}></input>
+                    <input placeholder="Last name" type="text" onChange={e=>lastname(e.target.value)}></input>
                 </div><br />
                 {error&& lastname.length<=0?
-                    <label className="required">Please fill any number</label> : ""}<br />
-                <span>=</span><br />
+                <label className="required">Please fill any number</label>:""}<br />
+                {/* <span>=</span><br /> */}
                 <button>submit</button>
             </form>
         </div>
