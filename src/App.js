@@ -16,7 +16,7 @@ export default function App() {
             <button className="margin"><Link to="/LoginPage/login">Login Page</Link></button>
             <button className="margin"><Link to="/Functions/Function-return">Functions Page</Link></button>
             <button className="margin"><Link to="/Advanced/Warning">Warning</Link></button>
-            <button><Link to="/Advanced/Valedation">Valedation</Link></button>
+            <button className="margin"><Link to="/Advanced/Valedation">Valedation</Link></button>
         </nav>
         <section>
             <Routes>
