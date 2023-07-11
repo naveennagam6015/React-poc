@@ -34,7 +34,7 @@ const Valedation = () => {
 
   return (
     <>
-      <h1>Controlled Form</h1>
+      <h1 className="p-3 text-center">Controlled Form</h1>
       <form onSubmit={handleSubmit}>
         <label>
           First Name:{" "}
@@ -110,12 +110,12 @@ const Valedation = () => {
             type="range"
             name="price"
             min="0"
-            max="50"
+            max="100"
             value={state.price}
             onChange={handleChange}
           />
         </label>
-        <button>Submit</button>
+        <button className="margin btn btn-info">Submit</button>
       </form>
       <h5>
         Name: {state.fname} {state.lname}
