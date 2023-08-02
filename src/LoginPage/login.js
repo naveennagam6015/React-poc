@@ -1,26 +1,41 @@
+// Login , signup and Validation form 
+import React from 'react'
 import { useState } from "react"
 
-export default function App() {
+function Login() {
   const [data, setData] = useState({
     username: '',
-    password: ''
-  })
-  const { username, password } = data
-  const changeHandler = e => {
-    setData({ ...data, [e.target.name]: [e.target.value] })
-  }
+    email: '',
+    password: '',
+    conformpassword: ''
+  });
+  const { username, email, password, conformpassword } = data;
+  const onChange = e => {
+    setData({ ...data, [e.target.name]: e.target.value })
+  };
   const submitHandler = e => {
-    e.perventDefault()
-    console.log(data)
-  }
+    e.preventDefault();
+    if(username.length<=5){
+      alert("Username must have 5 letters")
+    }else if (password!== conformpassword){
+      alert("Password is not matching")
+    }else{
+      console.log(data);
+    }
+  };
+
   return (
-    <div className="p-3 text-center">            
+    <center>
       <h1>Login</h1>
       <form onSubmit={submitHandler}>
-        <input type="text" name="username" value={username} onChange={changeHandler} /> <br />
-        <input type="password" name="password" value={password} onChange={changeHandler} /><br />
-        <input type="submit" className="btn btn-info margin" name="submit" />
+        <input type="text" placeholder='username' name="username" value={username} onChange={onChange} /> <br />
+        <input type="email" placeholder='Email' name="email" value={email} onChange={onChange} /><br />
+        <input type="password" placeholder='Password' name="password" value={password} onChange={onChange} /><br />
+        <input type="password" placeholder='Conform password' name="conformpassword" value={conformpassword} onChange={onChange} /><br />
+        {password!==conformpassword? <p style={{color:"red"}}>Password is not matching</p>:null}
+        <input type="submit" name="submit" />
       </form>
-    </div>
+    </center>
   )
 }
+export default Login
