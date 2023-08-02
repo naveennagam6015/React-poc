@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default function App() {
+function OnClick() {
   return (
     <div>
-      <button onClick={()=>console.log("clicked")}>Click Here</button>
-      <h1 onClick={()=>console.log("clicked")}>Click Here</h1>
-    </div>
-  )
+    <button onClick={()=>console.log("clicked")}>Click Here</button>
+    <h1 onClick={()=>console.log("clicked")}> OnClick</h1>
+  </div>  )
 }
+
+export default OnClick
