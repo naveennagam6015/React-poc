@@ -12,7 +12,11 @@ function Calculater() {
             <div className='calculater'>
                 <h2>Calculater</h2>
                 <input type="text" className="form-control w-50" value={calculater} onChange={onChange} /> <br />
-                <button className='btn btn-primary' type='submit' onClick={() => setResult(eval(calculater))}>Result</button><br />
+                <button className='btn btn-primary' type='submit' onClick={() => setResult(
+
+                    eval
+
+                        (calculater))}>Result</button><br />
                 <h3>Result is : {result}</h3>
                 <button className='btn btn-primary m-1' onClick={() => setCalculater(calculater + "1")}>1</button>
                 <button className='btn btn-primary m-1' onClick={() => setCalculater(calculater + "2")}>2</button>

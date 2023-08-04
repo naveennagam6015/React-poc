@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Calculater from './LoginPage/Calculater';
+import FetchData from './Functions/FetchData';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Calculater/>
+    <FetchData/>
   </React.StrictMode>
 );
 
