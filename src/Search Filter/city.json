@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "name": "Hyderabad"
+    },
+    {
+        "id": "2",
+        "name": "Warangal"
+    },
+    {
+        "id": "3",
+        "name": "Rajanna sircilla"
+    },
+    {
+        "id": "4",
+        "name": "Karimnagar"
+    },
+    {
+        "id": "5",
+        "name": "Korutla"
+    },
+    {
+        "id": "6",
+        "name": "Jagityal"
+    },
+    {
+        "id": "7",
+        "name": "Siddipet"
+    },
+    {
+        "id":"8",
+        "name":"Suryapet"
+    },
+    {
+        "id":"9",
+        "name":"Bhuvanagiri"
+    },
+    {
+        "id":"10",
+        "name":"Adilabad"
+    }
+]
