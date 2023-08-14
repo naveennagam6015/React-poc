@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import SearchFilter from './Search Filter/SearchFilter';
+import HocApp from './HOC/HocApp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SearchFilter/>
+    <HocApp/>
   </React.StrictMode>
 );
 
