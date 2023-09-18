@@ -41,6 +41,11 @@
   }
 } */
 
+@font-face {
+  font-family: resLogoFont;
+  src: url();
+}
+
 .navigation {
   width: 200px;
   position: fixed;
